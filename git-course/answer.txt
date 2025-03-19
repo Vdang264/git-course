@@ -1,0 +1,2 @@
+Cmd to set email: git config --global user.name 
+Cmd to set email: git config --global user.email
