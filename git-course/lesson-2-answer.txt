@@ -1,0 +1,15 @@
+#1
+- git init: Initiate the project 
+- git add <file_name> : Add the specific file to Staging area
+- git add .: Add all files under current directory 
+- git commit -m "message": Create a commit. 
+   -m is a function of git commit to avoid extra step using text editor to define the commit
+   "message": contains the description of the commit 
+#2
+- Create: file1, file2, file3 >> Has 3 files 
+- git init >> Init project 
+- git commit -m ”init project” >> Push init project 
+- git add file1 >> Add file1 to Staging 
+- git commit -m ”add file1” >> Push file1 
+- git add file >> No file name "file" found
+>> Only file1 available in the repo code 
