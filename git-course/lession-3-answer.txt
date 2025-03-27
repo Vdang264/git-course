@@ -1,0 +1,76 @@
+#1: 
+## Update commit message 
+``` git commit --amend ```
+1. Type `i` -> To insert mode 
+2. Type `esc` -> Exit insert mode 
+3. Type `:wq` -> Write and quit
+
+``` git commit --amend -m”message” ```
+
+## Bring the commit back from Stag 
+``` git restore --staged <file> ```
+
+## Bring the commit back from Repo (uncommit)
+``` git reset HEAD~1 (undo 1 commit) ```
+
+#2: 
+a. Tạo 3 file: file1, file2, file3
+Local: file1, file2, file3
+Stag: 
+Repo:
+b. Chạy lệnh: git init
+Local: file1, file2, file3
+Stag: 
+Repo:
+c. Chạy lệnh: git commit -m”init project”
+Local: file1, file2, file3
+Stag: 
+Repo:
+d. Chạy lệnh: git add file1
+Local: 
+Stag: file1
+Repo:
+e. Chạy lệnh: git commit -m”add file”
+Local: 
+Stag: 
+Repo: file 1
+f. Chạy lệnh: git add .
+Local: 
+Stag: file1, file2, file3
+Repo:
+g. Chạy lệnh: git restore --staged file2
+Local: 
+Stag: file1, file3
+Repo:
+h. Chạy lệnh: git commit -m”add all files”
+Local: 
+Stag: 
+Repo: file1, file3
+i. Chạy lệnh: git reset HEAD~1
+Local: 
+Stag: 
+Repo: file 1
+
+#3: 
+a. Chạy lệnh git init
+Local: 
+Stag: 
+Repo:
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.
+Local: file1.txt, file2.txt, oops/file3.txt
+Stag: 
+Repo:
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt
+ii. oops/
+Local: file1.txt, file2.txt, oops/file3.txt
+Stag: 
+Repo:
+d. Chạy lệnh: git add .
+Local: 
+Stag: file2.txt
+Repo:
+e. Chạy lệnh: git commit -m"init project"
+Local: 
+Stag: 
+Repo: file2.txt
