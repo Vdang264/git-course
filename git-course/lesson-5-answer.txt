@@ -1,0 +1,155 @@
+#1: 
+git commit --amend: modify the most recent commit
+git reset HEAD~3: reset the last 3 commits 
+
+#2: 
+a. Tạo thư mục lesson-8 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: lesson-8 
+        Stag:
+        Repo: 
+
+b. Tạo file: file1, file2, file3 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: 
+
+c. Chạy lệnh: git init 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: 
+
+d. Chạy lệnh: git add file1 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag: file1
+        Repo: 
+
+e. Chạy lệnh: git commit -m”init project” 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:  
+        Repo: file1
+
+f. Chạy lệnh: git checkout -b feat/feature-A 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: file1
+Branch: feat/feature-A 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: file1
+
+g. Chạy lệnh: git add file2 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory:  file1, file2, file3 
+        Stag:
+        Repo: file1
+Branch: feat/feature-A 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag: file2
+        Repo: file1
+
+h. Chạy lệnh: git commit -m”feat: add file2” 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: file1
+Branch: feat/feature-A 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: file1, file2 
+
+i. Chạy lệnh: git add file3 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: file1
+Branch: feat/feature-A 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag: file3
+        Repo: file1, file2 
+
+j. Chạy lệnh: git commit -m”feat: add file3” 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: file1
+Branch: feat/feature-A 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag: 
+        Repo: file1, file2, file3 
+    
+k. Chạy lệnh: git checkout -b feat/feature-B 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag:
+        Repo: file1
+Branch: feat/feature-A 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag: 
+        Repo: file1, file2, file3 
+Branch: feat/feature-B 
+    Commits: 
+    Area: 
+        Working directory: file1, file2, file3 
+        Stag: 
+        Repo: file1, file2, file3 
+
+l. Chạy lệnh: git reset HEAD~2 
+Branch: main 
+    Commits: 
+    Area: 
+        Working directory: 
+        Stag:  
+        Repo: file1
+Branch: feat/feature-A 
+    Commits: 
+    Area: 
+        Working directory: 
+        Stag: 
+        Repo: 
+Branch: feat/feature-B 
+    Commits: 
+    Area: 
+        Working directory: 
+        Stag: 
+        Repo: 
+
